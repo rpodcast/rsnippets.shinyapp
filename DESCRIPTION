@@ -1,0 +1,12 @@
+Package: rsnippets.site
+Title: Residual Snippets Site
+Version: 0.0.0.9000
+Authors@R: person('Eric', 'Nantz', email = 'thercast@gmail.com', role = c('cre', 'aut'))
+Description: PKG_DESC.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    shiny, 
+    golem
+RoxygenNote: 6.1.0
