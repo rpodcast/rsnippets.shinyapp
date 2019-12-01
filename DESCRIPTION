@@ -1,4 +1,4 @@
-Package: rsnippets.site
+Package: rsnippets.app
 Title: Residual Snippets Site
 Version: 0.0.0.9000
 Authors@R: person('Eric', 'Nantz', email = 'thercast@gmail.com', role = c('cre', 'aut'))

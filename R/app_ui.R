@@ -10,29 +10,43 @@ app_ui <- function() {
       init = f7Init(
         theme = "light"
       ),
-      f7SingleLayout(
+      f7TabLayout(
+        panels = NULL,
         navbar = f7Navbar(
-          title = "Residual Snippets",
-          hairline = TRUE,
-          shadow = TRUE
+          title = "Residual Snippets"
         ),
-        toolbar = f7Toolbar(
-          position = "bottom",
-          f7Link(label = "R-Podcast", src = "https://r-podcast.org")
-        ),
-        f7Card(
-          title = "Test",
-          p("hello"),
-          footer = tagList(
-            f7Button(color = "blue", label = "My button")
+        f7Tabs(
+          animated = TRUE,
+          f7Tab(
+            tabName = "Home",
+            icon = f7Icon("home"),
+            active = TRUE,
+            f7ExpandableCard(
+              "Residual Snippets is an informal, unedited, and free-flowing audio podcast 
+               from Eric Nantz.  If you enjoy hearing quick takes from a data scientist 
+               on their journey to blend innovative uses of open-source technology, 
+               contributing back to their brilliant communities, and juggling the curveballs 
+               life throws at them, this podcast is for you!",
+              id = 'home_card',
+              img = "www/residual_snippets.png",
+              fullBackground = FALSE,
+              title = "Click to learn more!"
+            )
+            # f7Card(
+            #   title = "Test",
+            #   p("hello"),
+            #   footer = tagList(
+            #     f7Button(color = "blue", label = "My button")
+            #   )
+            # )
+          ),
+          f7Tab(
+            tabName = "Episodes",
+            icon = f7Icon('volume'),
+            active = FALSE,
+            div(id = "add_episodes_here")
           )
-        ),
-        div(id = "add_episodes_here")
-        # mod_episode_box_ui(
-        #   "episode_box_ui_1",
-        #   episode_title = "R-Podcast Snippet #001",
-        #   episode_summary = "what's wrong, that's wrong."
-        # )
+        )
       )
     )
   )
@@ -42,7 +56,7 @@ app_ui <- function() {
 golem_add_external_resources <- function(){
   
   addResourcePath(
-    'www', system.file('app/www', package = 'rsnippets.site')
+    'www', system.file('app', 'www', package = 'rsnippets.app')
   )
  
   tags$head(

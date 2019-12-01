@@ -9,7 +9,7 @@
 ## Add information about the package that will contain your app
 
 golem::fill_desc(
-  pkg_name = "rsnippets.site", # The Name of the package containing the App 
+  pkg_name = "rsnippets.app", # The Name of the package containing the App 
   pkg_title = "Residual Snippets Site", # The Title of the package containing the App 
   pkg_description = "PKG_DESC.", # The Description of the package containing the App 
   author_first_name = "Eric", # Your First Name

@@ -3,7 +3,7 @@
 app_server <- function(input, output,session) {
   
   # obtain the json version of episode database
-  db_file <- config::get("db_json", file = system.file("app", "config.yml", package = "rsnippets.site"))
+  db_file <- config::get("db_json", file = system.file("app", "config.yml", package = "rsnippets.app"))
   episode_df <- tibble::as_tibble(jsonlite::fromJSON(db_file))
   
   # List the first level callModules here
