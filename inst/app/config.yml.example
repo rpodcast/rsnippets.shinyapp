@@ -1,0 +1,4 @@
+# This is just an illustration of the config.yml file
+# Re-save this as config.yml and populate values as appropriate
+default:
+  db_json: "https://path/to/dbexport.json"

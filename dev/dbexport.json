@@ -1,0 +1,162 @@
+[
+  {
+    "episode_int": 11,
+    "episode_url": "https://rpodcast-snippets-audio.s3.amazonaws.com/source/rsnippet011_2019-11-08_04-09.mp3",
+    "episode_id": "rsnippet011_2019-11-08_04-09",
+    "episode_timestamp": "2019-11-08_04-09",
+    "episode_summary": "Uh What? Come. No. Oh!",
+    "episode_title": "R-Podcast Snippet #011",
+    "episode_ms": 32820,
+    "episode_index": "011"
+  },
+  {
+    "episode_int": 1,
+    "episode_url": "https://rpodcast-snippets-audio.s3.amazonaws.com/source/rsnippet001_2019-11-03_04-35.mp3",
+    "episode_id": "rsnippet001_2019-11-03_04-35",
+    "episode_timestamp": "2019-11-03_04-35",
+    "episode_summary": "what's wrong, that's wrong.",
+    "episode_title": "R-Podcast Snippet #001",
+    "episode_ms": 20160,
+    "episode_index": "001"
+  },
+  {
+    "episode_int": 12,
+    "episode_url": "https://rpodcast-snippets-audio.s3.amazonaws.com/source/rsnippet012_2019-11-08_13-33.mp3",
+    "episode_id": "rsnippet012_2019-11-08_13-33",
+    "episode_timestamp": "2019-11-08_13-33",
+    "episode_summary": "no body. Great. Thanks. And well, well in change. Right for you. The Almighty God, right?",
+    "episode_title": "R-Podcast Snippet #012",
+    "episode_ms": 26520,
+    "episode_index": "012"
+  },
+  {
+    "episode_url": "https://rpodcast-snippets-audio.s3.amazonaws.com/source/rsnippet006_2019-11-04_05-23.mp3",
+    "episode_int": 6,
+    "episode_id": "rsnippet006_2019-11-04_05-23",
+    "episode_timestamp": "2019-11-04_05-23",
+    "episode_summary": "R-Podcast Snippet 006 recorded by Eric Nantz. I wish I could give an actual description, but Eric's bot wrote this summary!",
+    "episode_title": "R-Podcast Snippet #006",
+    "episode_ms": 14100,
+    "episode_index": "006"
+  },
+  {
+    "episode_int": 9,
+    "episode_url": "https://rpodcast-snippets-audio.s3.amazonaws.com/source/rsnippet009_2019-11-08_03-58.mp3",
+    "episode_id": "rsnippet009_2019-11-08_03-58",
+    "episode_timestamp": "2019-11-08_03-58",
+    "episode_summary": "Finally this frog, okay?",
+    "episode_title": "R-Podcast Snippet #009",
+    "episode_ms": 14520,
+    "episode_index": "009"
+  },
+  {
+    "episode_url": "https://rpodcast-snippets-audio.s3.amazonaws.com/source/rsnippet007_2019-11-06_04-52.mp3",
+    "episode_int": 7,
+    "episode_id": "rsnippet007_2019-11-06_04-52",
+    "episode_timestamp": "2019-11-06_04-52",
+    "episode_summary": "R-Podcast Snippet 007 recorded by Eric Nantz. I wish I could give an actual description, but Eric's bot wrote this summary!",
+    "episode_title": "R-Podcast Snippet #007",
+    "episode_ms": 10140,
+    "episode_index": "007"
+  },
+  {
+    "episode_url": "https://rpodcast-snippets-audio.s3.amazonaws.com/source/rsnippet002_2019-11-03_04-39.mp3",
+    "episode_int": 2,
+    "episode_id": "rsnippet002_2019-11-03_04-39",
+    "episode_timestamp": "2019-11-03_04-39",
+    "episode_summary": "R-Podcast Snippet 002 recorded by Eric Nantz. I wish I could give an actual description, but Eric's bot wrote this summary!",
+    "episode_title": "R-Podcast Snippet #002",
+    "episode_ms": 50580,
+    "episode_index": "002"
+  },
+  {
+    "episode_int": 10,
+    "episode_url": "https://rpodcast-snippets-audio.s3.amazonaws.com/source/rsnippet010_2019-11-08_04-06.mp3",
+    "episode_id": "rsnippet010_2019-11-08_04-06",
+    "episode_timestamp": "2019-11-08_04-06",
+    "episode_summary": "Hartley.",
+    "episode_title": "R-Podcast Snippet #010",
+    "episode_ms": 15900,
+    "episode_index": "010"
+  },
+  {
+    "episode_int": 15,
+    "episode_url": "https://rpodcast-snippets-audio.s3.amazonaws.com/source/rsnippet015_2019-11-16_04-08.mp3",
+    "episode_id": "rsnippet015_2019-11-16_04-08",
+    "episode_timestamp": "2019-11-16_04-08",
+    "episode_summary": "Okay. Trigger person over the land. You want to be our first function here? Transcribe bility, create our function.",
+    "episode_title": "R-Podcast Snippet #015",
+    "episode_ms": 13740,
+    "episode_index": "015"
+  },
+  {
+    "episode_url": "https://rpodcast-snippets-audio.s3.amazonaws.com/source/rsnippet003_2019-11-04_04-45.mp3",
+    "episode_int": 3,
+    "episode_id": "rsnippet003_2019-11-04_04-45",
+    "episode_timestamp": "2019-11-04_04-45",
+    "episode_summary": "R-Podcast Snippet 003 recorded by Eric Nantz. I wish I could give an actual description, but Eric's bot wrote this summary!",
+    "episode_title": "R-Podcast Snippet #003",
+    "episode_ms": 21180,
+    "episode_index": "003"
+  },
+  {
+    "episode_int": 8,
+    "episode_url": "https://rpodcast-snippets-audio.s3.amazonaws.com/source/rsnippet008_2019-11-08_03-46.mp3",
+    "episode_id": "rsnippet008_2019-11-08_03-46",
+    "episode_timestamp": "2019-11-08_03-46",
+    "episode_summary": "right over.",
+    "episode_title": "R-Podcast Snippet #008",
+    "episode_ms": 10560,
+    "episode_index": "008"
+  },
+  {
+    "episode_url": "https://rpodcast-snippets-audio.s3.amazonaws.com/source/rsnippet014_2019-11-16_03-53.mp3",
+    "episode_int": 14,
+    "episode_id": "rsnippet014_2019-11-16_03-53",
+    "episode_timestamp": "2019-11-16_03-53",
+    "episode_summary": "R-Podcast Snippet 014 recorded by Eric Nantz. I wish I could give an actual description, but Eric's bot wrote this summary!",
+    "episode_title": "R-Podcast Snippet #014",
+    "episode_ms": 21060,
+    "episode_index": "014"
+  },
+  {
+    "episode_int": 16,
+    "episode_url": "https://rpodcast-snippets-audio.s3.amazonaws.com/source/rsnippet016_2019-11-16_04-14.mp3",
+    "episode_id": "rsnippet016_2019-11-16_04-14",
+    "episode_timestamp": "2019-11-16_04-14",
+    "episode_summary": "the Amazon. Transcribe, sir, Create Create a new I.",
+    "episode_title": "R-Podcast Snippet #016",
+    "episode_ms": 14100,
+    "episode_index": "016"
+  },
+  {
+    "episode_url": "https://rpodcast-snippets-audio.s3.amazonaws.com/source/rsnippet013_2019-11-16_03-51.mp3",
+    "episode_int": 13,
+    "episode_id": "rsnippet013_2019-11-16_03-51",
+    "episode_timestamp": "2019-11-16_03-51",
+    "episode_summary": "R-Podcast Snippet 013 recorded by Eric Nantz. I wish I could give an actual description, but Eric's bot wrote this summary!",
+    "episode_title": "R-Podcast Snippet #013",
+    "episode_ms": 18840,
+    "episode_index": "013"
+  },
+  {
+    "episode_url": "https://rpodcast-snippets-audio.s3.amazonaws.com/source/rsnippet005_2019-11-04_05-06.mp3",
+    "episode_int": 5,
+    "episode_id": "rsnippet005_2019-11-04_05-06",
+    "episode_timestamp": "2019-11-04_05-06",
+    "episode_summary": "R-Podcast Snippet 005 recorded by Eric Nantz. I wish I could give an actual description, but Eric's bot wrote this summary!",
+    "episode_title": "R-Podcast Snippet #005",
+    "episode_ms": 19740,
+    "episode_index": "005"
+  },
+  {
+    "episode_url": "https://rpodcast-snippets-audio.s3.amazonaws.com/source/rsnippet004_2019-11-04_04-56.mp3",
+    "episode_int": 4,
+    "episode_id": "rsnippet004_2019-11-04_04-56",
+    "episode_timestamp": "2019-11-04_04-56",
+    "episode_summary": "R-Podcast Snippet 004 recorded by Eric Nantz. I wish I could give an actual description, but Eric's bot wrote this summary!",
+    "episode_title": "R-Podcast Snippet #004",
+    "episode_ms": 24000,
+    "episode_index": "004"
+  }
+]

@@ -7,6 +7,20 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: 
-    shiny, 
-    golem
-RoxygenNote: 6.1.0
+    shiny,
+    golem,
+    shinyMobile (>= 0.1.0),
+    config,
+    wavesurfer (>= 0.1.0),
+    processx,
+    attempt,
+    DT,
+    glue,
+    htmltools,
+    jsonlite,
+    magrittr,
+    dplyr,
+    tibble
+RoxygenNote: 6.1.1
+Suggests: 
+    testthat
