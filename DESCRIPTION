@@ -24,6 +24,9 @@ Imports:
     shinyjs,
     V8,
     pkgload
+Remotes:
+    RinteRface/shinyMobile
+    Athospd/wavesurfer
 RoxygenNote: 6.1.1
 Suggests: 
     testthat
