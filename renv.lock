@@ -70,6 +70,13 @@
       "Repository": "CRAN",
       "Hash": "084336e3a1a0d358337525d7a394bb8b"
     },
+    "V8": {
+      "Package": "V8",
+      "Version": "2.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "0287ba9640c1a28f389859b0d3c41cfc"
+    },
     "askpass": {
       "Package": "askpass",
       "Version": "1.1",
@@ -818,6 +825,13 @@
       "RemoteRef": "master",
       "RemoteSha": "77be6c5389440d441c6cd5525cb698973bf7367c",
       "Hash": "ae4cc098629f462194f756c8ef5dd9e7"
+    },
+    "shinyjs": {
+      "Package": "shinyjs",
+      "Version": "1.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "f80ba8b88aa5cd27157e8cd3bbd7cc35"
     },
     "sourcetools": {
       "Package": "sourcetools",
