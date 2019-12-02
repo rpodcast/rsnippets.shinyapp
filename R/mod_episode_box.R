@@ -60,6 +60,20 @@ mod_episode_box_ui <- function(id, episode_title, episode_int, episode_df) {
         )
       )
     )
+    
+#     f7Card(
+#       title = glue::glue("Episode {episode_int} Comments"),
+#       HTML(
+#         "<script src='https://utteranc.es/client.js'
+#         repo='rpodcast/rsnippets.app'
+#         issue-term='Episode comment'
+#         label='comments'
+#         theme='github-light'
+#         crossorigin='anonymous'
+#         async>
+# </script>"
+#       )
+#     )
   )
 }
     

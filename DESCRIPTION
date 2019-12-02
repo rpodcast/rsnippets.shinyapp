@@ -20,7 +20,9 @@ Imports:
     jsonlite,
     magrittr,
     dplyr,
-    tibble
+    tibble,
+    shinyjs,
+    V8
 RoxygenNote: 6.1.1
 Suggests: 
     testthat

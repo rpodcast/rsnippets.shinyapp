@@ -15,7 +15,7 @@ app_server <- function(input, output,session) {
   episode_df <- episode_df %>%
     arrange(desc(episode_int))
   
-  for (i in episode_df$episode_int) {
+  for (i in sort(episode_df$episode_int)) {
     insertUI(
       selector = "#add_episodes_here",
       ui = tagList(
@@ -37,6 +37,8 @@ app_server <- function(input, output,session) {
       episode_df = episode_df
     )
   }
+  
+  callModule(mod_comments_server, "comments_ui_1", episode_df)
   
   # callModule(mod_episode_box_server, 
   #            "episode_box_ui_1", 

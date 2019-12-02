@@ -32,19 +32,24 @@ app_ui <- function() {
               fullBackground = FALSE,
               title = "Click to learn more!"
             )
-            # f7Card(
-            #   title = "Test",
-            #   p("hello"),
-            #   footer = tagList(
-            #     f7Button(color = "blue", label = "My button")
-            #   )
-            # )
           ),
           f7Tab(
             tabName = "Episodes",
             icon = f7Icon('volume'),
             active = FALSE,
             div(id = "add_episodes_here")
+          ),
+          f7Tab(
+            tabName = "Feedback",
+            icon = f7Icon('mail'),
+            active = FALSE,
+            f7Card(
+              title = "Share your feedback!",
+              p("If you would like to share you feedback on any of the topics discussed in the snippets,
+                 you can easily do so using the comments widget powered by ", a("utterances!", href = "https://utteranc.es"),
+              "All you need is a GitHub account."),
+            ),
+            mod_comments_ui("comments_ui_1")
           )
         )
       )
