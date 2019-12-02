@@ -22,7 +22,8 @@ Imports:
     dplyr,
     tibble,
     shinyjs,
-    V8
+    V8,
+    pkgload
 RoxygenNote: 6.1.1
 Suggests: 
     testthat
