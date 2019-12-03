@@ -10,3 +10,5 @@ $run_dev.*
 ^renv$
 ^renv\.lock$
 ^app\.R$
+^/home/eric/rpodcast_code/rsnippets\.app/Dockerfile$
+^Dockerfile$
