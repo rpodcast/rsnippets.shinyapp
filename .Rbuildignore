@@ -12,3 +12,4 @@ $run_dev.*
 ^app\.R$
 ^/home/eric/rpodcast_code/rsnippets\.app/Dockerfile$
 ^Dockerfile$
+^prototyping$
