@@ -1,2 +1,5 @@
 default:
+  db_json: "prototyping/dbexport.json"
+
+production:
   db_json: "https://s3.amazonaws.com/rsnippets.show/dbexport.json"

@@ -8,7 +8,8 @@ app_ui <- function() {
     f7Page(
       title = "Residual Snippets",
       init = f7Init(
-        theme = "light"
+        theme = "light",
+        skin = "aurora"
       ),
       f7TabLayout(
         panels = NULL,
@@ -21,17 +22,7 @@ app_ui <- function() {
             tabName = "Home",
             icon = f7Icon("home"),
             active = TRUE,
-            f7ExpandableCard(
-              "Residual Snippets is an informal, unedited, and free-flowing audio podcast 
-               from Eric Nantz.  If you enjoy hearing quick takes from a data scientist 
-               on their journey to blend innovative uses of open-source technology, 
-               contributing back to their brilliant communities, and juggling the curveballs 
-               life throws at them, this podcast is for you!",
-              id = 'home_card',
-              img = "www/residual_snippets.png",
-              fullBackground = FALSE,
-              title = "Click to learn more!"
-            )
+            mod_welcome_ui("welcome_ui_1")
           ),
           f7Tab(
             tabName = "Episodes",
