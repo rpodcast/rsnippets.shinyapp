@@ -32,7 +32,7 @@ app_ui <- function() {
           ),
           f7Tab(
             tabName = "Feedback",
-            icon = f7Icon('mail'),
+            icon = f7Icon('email'),
             active = FALSE,
             f7Card(
               title = "Share your feedback!",
