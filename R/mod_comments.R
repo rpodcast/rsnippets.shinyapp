@@ -23,7 +23,7 @@ mod_comments_ui <- function(id, episode_df){
       #uiOutput(ns("utterance_placeholder"))
       HTML(
         "<script src='https://utteranc.es/client.js'
-        repo='rpodcast/rsnippets.app'
+        repo='rpodcast/rsnippets.shinyapp'
         issue-term='Episode comment'
         label='comments'
         theme='github-light'
@@ -42,6 +42,12 @@ mod_comments_ui <- function(id, episode_df){
 #' @keywords internal
     
 mod_comments_server <- function(input, output, session, episode_df){
+  
+  ##############################################################
+  # I tried to get this to work serverside for specific
+  # episode comments, but failed ...
+  ##############################################################
+  
   ns <- session$ns
   
   # obtain episode IDs
@@ -63,7 +69,7 @@ mod_comments_server <- function(input, output, session, episode_df){
 #     
 #     glue::glue(
 #       "<script src='https://utteranc.es/client.js'
-#         repo='rpodcast/rsnippets.app'
+#         repo='rpodcast/rsnippets.shinyapp'
 #         issue-term='Episode {ep_select} comment'
 #         label='comments'
 #         theme='github-light'
