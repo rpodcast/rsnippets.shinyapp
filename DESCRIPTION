@@ -23,7 +23,8 @@ Imports:
     tibble,
     shinyjs,
     V8,
-    pkgload
+    pkgload,
+    markdown
 Remotes:
     RinteRface/shinyMobile
     Athospd/wavesurfer

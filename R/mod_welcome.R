@@ -13,22 +13,32 @@
 #' @keywords internal
 #' @export 
 #' @importFrom shiny NS tagList 
-mod_welcome_ui <- function(id){
+mod_welcome_ui <- function(id, show_description = NULL, host_description = NULL) {
   ns <- NS(id)
+  
+  if (is.null(show_description)) {
+    show_description <- readLines(system.file("app", "show_description.md", package = "rsnippets.app"))
+  }
+  
+  if (is.null(host_description)) {
+    host_description <- readLines(system.file("app", "host_description.md", package = "rsnippets.app"))
+  }
+  
+  
   tagList(
     f7ExpandableCard(
-      "Residual Snippets is an informal, unedited, and free-flowing audio podcast 
-               from Eric Nantz.  If you enjoy hearing quick takes from a data scientist 
-               on their journey to blend innovative uses of open-source technology, 
-               contributing back to their brilliant communities, and juggling the curveballs 
-               life throws at them, this podcast is for you!",
+      markdown(show_description),
       id = 'home_card',
       img = "www/residual_snippets.png",
       fullBackground = FALSE,
       title = "Click to learn more!"
     ),
+    f7Align(
+      side = "center",
+      h2("Behind the voice")
+    ),
     f7SocialCard(
-      "Some text here",
+      markdown(host_description),
       author = "Eric Nantz",
       author_img = "www/avatar.jpg"
       #author_img = system.file("app", "www", "avatar.jpg", package = "rsnippets.app")
@@ -44,6 +54,8 @@ mod_welcome_ui <- function(id){
     
 mod_welcome_server <- function(input, output, session) {
   ns <- session$ns
+  
+  # so far nothing to return
 }
 
 ## To be copied in the UI

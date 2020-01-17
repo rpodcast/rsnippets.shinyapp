@@ -5,7 +5,7 @@
 \alias{mod_welcome_server}
 \title{mod_welcome_ui and mod_welcome_server}
 \usage{
-mod_welcome_ui(id)
+mod_welcome_ui(id, show_description = NULL, host_description = NULL)
 
 mod_welcome_server(input, output, session)
 }
