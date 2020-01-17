@@ -1,10 +1,17 @@
 #' @import shiny
 #' @import dplyr
 app_server <- function(input, output,session) {
+  # import configuration
+  config <- config::get(file = system.file("app", "config.yml", package = "rsnippets.app"))
   
   # obtain the json version of episode database
-  db_file <- config::get("db_json", file = system.file("app", "config.yml", package = "rsnippets.app"))
+  db_file = config$db_json
+  
   episode_df <- tibble::as_tibble(jsonlite::fromJSON(db_file))
+  
+  # sort by descending episode number
+  episode_df <- episode_df %>%
+    arrange(desc(episode_int))
   
   # List the first level callModules here
   # launch welcome module
@@ -15,7 +22,7 @@ app_server <- function(input, output,session) {
   episode_df <- episode_df %>%
     arrange(desc(episode_int))
   
-  for (i in sort(episode_df$episode_int)) {
+  for (i in episode_df$episode_int) {
     # launch UI portion of episode module
     insertUI(
       selector = "#add_episodes_here",
