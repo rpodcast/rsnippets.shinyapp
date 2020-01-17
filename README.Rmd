@@ -11,48 +11,28 @@ knitr::opts_chunk$set(
   fig.path = "man/figures/README-",
   out.width = "100%"
 )
+
+markdown <- function(s) {
+  s <- gsub("\\n[ \\t]*", "\n", s)
+  shiny::HTML(markdown::markdownToHTML(fragment.only = TRUE, text = s))
+}
 ```
 
-# rsnippets.app
+# Residual Snippets Shiny App
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
-The goal of rsnippets.app is to ...
 
-## Installation
+**Residual Snippets** is an informal, unedited, and free-flowing audio series from [Eric Nantz](https://github.com/rpodcast).  If you enjoy hearing quick takes from a data scientist on their journey to blend innovative uses of open-source technology, contributing back to their brilliant communities, and juggling the curveballs life throws at them, this series is for you!
 
-You can install the released version of rsnippets.app from [CRAN](https://CRAN.R-project.org) with:
+This repository contains the code behind the Residual Snippets Shiny application. It is my first forray into creating a mobile style application, but it is now possible thanks to these excellent contributions in the Shiny community:
 
-``` r
-install.packages("rsnippets.app")
-```
+* [`shinyMobile`](https://rinterface.github.io/shinyMobile/index.html) package written by __David Granjon__ ([`@divadnojnarg`](https://twitter.com/divadnojnarg)), which powers this application's UI!
+* __Athos Petri Damiani__ ([`@athos_damiani`](https://twitter.com/athos_damiani)) authored an excellent R package [`wavesurfer`](https://github.com/Athospd/wavesurfer) that wraps the [`wavesurfer.js`](https://wavesurfer-js.org/) JavaScript library, enabling this application to play the __Residual Snippet__ episodes!
 
-## Example
-
-This is a basic example which shows you how to solve a common problem:
-
-```{r example}
-library(rsnippets.app)
-## basic example code
-```
-
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
+You can view the hosted version of the application at [rpodcast.shinyapps.io/rsnippets](https://rpodcast.shinyapps.io/rsnippets)
 
 ## Code of Conduct
 
