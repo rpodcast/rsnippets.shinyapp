@@ -51,7 +51,7 @@ mod_episode_box_ui <- function(id, episode_title, episode_int, episode_df) {
       fluidRow(
         column(
           width = 12,
-          f7Popup(
+          f7Sheet(
             id = ns("transcript_popup"),
             label = "View Transcript",
             title = glue::glue("Episode {episode_int} Transcript"),
@@ -65,7 +65,7 @@ mod_episode_box_ui <- function(id, episode_title, episode_int, episode_df) {
 #       title = glue::glue("Episode {episode_int} Comments"),
 #       HTML(
 #         "<script src='https://utteranc.es/client.js'
-#         repo='rpodcast/rsnippets.app'
+#         repo='rpodcast/rsnippets.shinyapp'
 #         issue-term='Episode comment'
 #         label='comments'
 #         theme='github-light'
