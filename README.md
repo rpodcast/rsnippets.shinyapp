@@ -18,11 +18,23 @@ this series is for you\!
 
 This repository contains the code behind the Residual Snippets Shiny
 application. It is my first forray into creating a mobile style
-application, but it is now possible thanks to the excellent
-[`shinyMobile`](https://rinterface.github.io/shinyMobile/index.html)
-package written by **David Granjon**
-([`@divadnojnarg`](https://twitter.com/divadnojnarg)), which powers this
-application’s UI\!
+application, but it is now possible thanks to these excellent
+contributions in the Shiny community:
+
+  - [`shinyMobile`](https://rinterface.github.io/shinyMobile/index.html)
+    package written by **David Granjon**
+    ([`@divadnojnarg`](https://twitter.com/divadnojnarg)), which powers
+    this application’s UI\!
+  - **Athos Petri Damiani**
+    ([`@athos_damiani`](https://twitter.com/athos_damiani)) authored an
+    excellent R package
+    [`wavesurfer`](https://github.com/Athospd/wavesurfer) that wraps the
+    [`wavesurfer.js`](https://wavesurfer-js.org/) JavaScript library,
+    enabling this application to play the **Residual Snippet**
+    episodes\!
+
+You can view the hosted version of the application at
+[rpodcast.shinyapps.io/rsnippets](https://rpodcast.shinyapps.io/rsnippets)
 
 ## Code of Conduct
 
