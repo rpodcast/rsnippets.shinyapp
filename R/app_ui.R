@@ -19,16 +19,16 @@ app_ui <- function() {
         f7Tabs(
           animated = TRUE,
           f7Tab(
-            tabName = "Home",
-            icon = f7Icon("home"),
-            active = TRUE,
-            mod_welcome_ui("welcome_ui_1")
-          ),
-          f7Tab(
             tabName = "Episodes",
             icon = f7Icon('volume'),
-            active = FALSE,
+            active = TRUE,
             div(id = "add_episodes_here")
+          ),
+          f7Tab(
+            tabName = "About",
+            icon = f7Icon("home"),
+            active = FALSE,
+            mod_welcome_ui("welcome_ui_1")
           ),
           f7Tab(
             tabName = "Feedback",

@@ -26,13 +26,19 @@ mod_welcome_ui <- function(id, show_description = NULL, host_description = NULL)
   
   
   tagList(
-    f7ExpandableCard(
+    f7Card(
       markdown(show_description),
-      id = 'home_card',
-      img = "www/residual_snippets.png",
-      fullBackground = FALSE,
-      title = "Click to learn more!"
+      title = "Welcome to the Residual Snippets App!"
+      #id = 'home_card',
+      #img = "www/residual_snippets.png",
     ),
+    # f7ExpandableCard(
+    #   markdown(show_description),
+    #   id = 'home_card',
+    #   img = "www/residual_snippets.png",
+    #   fullBackground = FALSE,
+    #   title = "Click to learn more!"
+    # ),
     f7Align(
       side = "center",
       h2("Behind the voice")
