@@ -25,7 +25,8 @@ Imports:
     V8,
     pkgload,
     markdown,
-    waiter
+    waiter,
+    lubridate
 Remotes:
     RinteRface/shinyMobile
     Athospd/wavesurfer

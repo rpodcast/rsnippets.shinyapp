@@ -21,10 +21,15 @@ mod_episode_box_ui <- function(id, episode_title, episode_int, episode_df) {
   # obtain row with supplied episode_int
   df <- episode_df %>%
     filter(episode_int == !!episode_int)
+  
+  # derive time stamp for episode
+  date_print <- lubridate::parse_date_time(df$episode_timestamp, "%Y-%m-%d_%H-%M")
+  duration_print <- glue::glue("{x} minutes", x = ceiling(episode_df$episode_duration / (60 * 1000)))
 
   tagList(
     f7Card(
-      title = df$episode_title,
+      title = glue::glue("Episode {title} recorded on {date_print} ({duration_print})",
+                         title = df$episode_title),
       #color = "blue",
       f7Row(
         f7Col(
