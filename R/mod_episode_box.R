@@ -15,6 +15,7 @@
 #' @importFrom shiny NS tagList 
 #' @import shinyMobile
 #' @import wavesurfer
+#' @import waiter
 mod_episode_box_ui <- function(id, episode_title, episode_int, episode_df) {
   ns <- NS(id)
   # obtain row with supplied episode_int
@@ -116,16 +117,28 @@ mod_episode_box_ui <- function(id, episode_title, episode_int, episode_df) {
 mod_episode_box_server <- function(input, output, session, episode_int, episode_df){
   ns <- session$ns
   
+  # establish waiter for wavesurferloading
+  #w <- Waiter$new(id = ns("my_ws"))
+  
   # obtain row with supplied episode_int
   df <- episode_df %>%
     filter(episode_int == !!episode_int)
   
-  output$my_ws <- renderWavesurfer({
+  # reactive for wavesurfer object
+  w_player <- reactive({
+    req(input$waveform_ind)
+    #w$show()
     my_url <- df$episode_url
-    wavesurfer(audio = my_url) %>%
+    res <- wavesurfer(audio = my_url) %>%
       ws_set_wave_color('#5511aa') %>%
       ws_timeline() %>%
       ws_cursor()
+    #w$hide()
+    return(res)
+  })
+  
+  output$my_ws <- renderWavesurfer({
+    w_player()
   })
   
   output$my_audio <- renderUI({

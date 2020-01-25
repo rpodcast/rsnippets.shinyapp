@@ -24,7 +24,8 @@ Imports:
     shinyjs,
     V8,
     pkgload,
-    markdown
+    markdown,
+    waiter
 Remotes:
     RinteRface/shinyMobile
     Athospd/wavesurfer
