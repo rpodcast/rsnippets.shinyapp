@@ -80,14 +80,14 @@ mod_episode_box_ui <- function(id, episode_title, episode_int, episode_df) {
           conditionalPanel(
             condition = "input.transcript_ind == true",
             ns = ns,
-            uiOutput(ns("text_viewer_placeholder"))
+            f7Block(
+              f7BlockHeader(text = "Episode Transcript"),
+              df$episode_summary,
+              strong = TRUE,
+              inset = TRUE,
+              hairlines = FALSE
+            )
           )
-          # f7Sheet(
-          #   id = ns("transcript_popup"),
-          #   label = "View Transcript",
-          #   title = glue::glue("Episode {episode_int} Transcript"),
-          #   df$episode_summary
-          # )
         )
       )
     )
@@ -144,16 +144,6 @@ mod_episode_box_server <- function(input, output, session, episode_int, episode_
   output$my_audio <- renderUI({
     my_url <- df$episode_url
     html_player(my_url)
-  })
-  
-  output$text_viewer_placeholder <- renderUI({
-    f7Block(
-      f7BlockHeader(text = "Episode Transcript"),
-      df$episode_summary,
-      strong = TRUE,
-      inset = TRUE,
-      hairlines = FALSE
-    )
   })
   
   # create events for audio playback controllers
