@@ -13,6 +13,7 @@ I have been wanting to produce something like this for a long time, and I've bee
 This application was created using the [R](https://r-project.org) statistical computing language.  Key packages that make this possible include:
 
 * [`{shinyMobile}`](https://rinterface.github.io/shinyMobile/) by __David Granjon__ ([`@divadnojnarg`](https://twitter.com/divadnojnarg)) (part of the [RinteRface](https://rinterface.com/) collection).  This is the first package in the R ecosystem that empowers users like me to creat a mobile-first app!
+* [`{golem}`](https://thinkr-open.github.io/golem/) by [ThinkR](https://thinkr.fr/) which enables me to create an R pakage infrastructure around this application and utilize best practices in development.
 * [`{wavesurfer{}`](https://github.com/Athospd/wavesurfer) by __Athos Petri Damiani__ which wraps the [`wavesurfer.js`](https://wavesurfer-js.org/) JavaScript library, enabling this application to play the __Residual Snippet__ episodes!
 
 The backend infrastructure leverages the following Amazon Web Services: S3 storage, DynamoDB, Amazon Transcribe, and Elastic Transcoder. In addition, the episodes are recorded using the Telegram messenger's voice memo functionality and distributed to the backend infrastructure via their API.  A detailed writeup is to come!
