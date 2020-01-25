@@ -22,6 +22,10 @@ app_ui <- function() {
             tabName = "Episodes",
             icon = f7Icon('volume'),
             active = TRUE,
+            f7Card(
+              title = "Player Guide",
+              "Please note that the waveform player may not render for some time due to performance issues.  I will continue to work on it!"
+            ),
             div(id = "add_episodes_here")
           ),
           f7Tab(

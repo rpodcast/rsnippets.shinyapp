@@ -25,38 +25,68 @@ mod_episode_box_ui <- function(id, episode_title, episode_int, episode_df) {
     f7Card(
       title = df$episode_title,
       #color = "blue",
-      fluidRow(
-        column(
-          width = 12,
-          wavesurferOutput(ns("my_ws"))
-        )
-      ),
-      
-      fluidRow(
-        column(
-          width = 12,
-          f7Segment(
-            shadow = TRUE,
-            container = "row",
-            f7Button(ns("play"), f7Icon("play")),
-            f7Button(ns("pause"), f7Icon("pause")),
-            f7Button(ns("stop"), icon("stop")),
-            f7Button(ns("skip_backward"), icon("backward")),
-            f7Button(ns("skip_forward"), icon("forward")),
-            f7Button(ns("mute"), icon("volume-off"))
+      f7Row(
+        f7Col(
+          f7Toggle(
+            ns("waveform_ind"),
+            "Use WaveForm Player",
+            checked = FALSE,
+            color = "blue"
+          ),
+          #width = 12,
+          conditionalPanel(
+            condition = "input.waveform_ind == true",
+            ns = ns,
+            wavesurferOutput(ns("my_ws"))
+          ),
+          conditionalPanel(
+            condition = "input.waveform_ind == false",
+            ns = ns,
+            uiOutput(ns("my_audio"))
           )
         )
       ),
       
-      fluidRow(
-        column(
-          width = 12,
-          f7Sheet(
-            id = ns("transcript_popup"),
-            label = "View Transcript",
-            title = glue::glue("Episode {episode_int} Transcript"),
-            df$episode_summary
+      conditionalPanel(
+        condition = "input.waveform_ind == 'true'",
+        ns = ns,
+        f7Row(
+          f7Col(
+            #width = 12,
+            f7Segment(
+              shadow = TRUE,
+              container = "row",
+              f7Button(ns("play"), f7Icon("play")),
+              f7Button(ns("pause"), f7Icon("pause")),
+              f7Button(ns("stop"), icon("stop")),
+              f7Button(ns("skip_backward"), icon("backward")),
+              f7Button(ns("skip_forward"), icon("forward")),
+              f7Button(ns("mute"), icon("volume-off"))
+            )
           )
+        )
+      ),
+      
+      f7Row(
+        f7Col(
+          #width = 12,
+          f7Toggle(
+            ns("transcript_ind"),
+            "View Transcript",
+            checked = FALSE,
+            color = "blue"
+          ),
+          conditionalPanel(
+            condition = "input.transcript_ind == true",
+            ns = ns,
+            uiOutput(ns("text_viewer_placeholder"))
+          )
+          # f7Sheet(
+          #   id = ns("transcript_popup"),
+          #   label = "View Transcript",
+          #   title = glue::glue("Episode {episode_int} Transcript"),
+          #   df$episode_summary
+          # )
         )
       )
     )
@@ -96,6 +126,21 @@ mod_episode_box_server <- function(input, output, session, episode_int, episode_
       ws_set_wave_color('#5511aa') %>%
       ws_timeline() %>%
       ws_cursor()
+  })
+  
+  output$my_audio <- renderUI({
+    my_url <- df$episode_url
+    html_player(my_url)
+  })
+  
+  output$text_viewer_placeholder <- renderUI({
+    f7Block(
+      f7BlockHeader(text = "Episode Transcript"),
+      df$episode_summary,
+      strong = TRUE,
+      inset = TRUE,
+      hairlines = FALSE
+    )
   })
   
   # create events for audio playback controllers
